@@ -1,0 +1,94 @@
+body {
+
+font-family: Arial, Helvetica, sans-serif; 
+margin: 0;
+background: linear-gradient(95deg, rgb(241, 200, 162), rgb(255, 253, 145));
+min-height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+animation: moverFondo 10s ease infinite;
+    
+}
+
+@keyframes moverFondo {
+    
+0%   { background-position: 0% 100%; }
+50%  { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+
+}
+
+.encabezado {
+
+background: linear-gradient(130deg, rgb(231, 216, 156), rgb(227, 222, 148));
+padding: 10px 20px;
+
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+overflow-x: hidden;
+
+}
+
+.logo img{
+
+  
+border-radius: 40px;
+
+
+}
+
+.enlaces {
+
+list-style: none;
+display: flex;
+gap: 30px;
+
+
+}
+
+
+.enlaces li a{
+
+text-decoration: none;
+color: rgb(11, 6, 2);
+font-size: 18px;
+font-weight: bold;
+transition: 1s;
+
+}
+
+.enlaces li a:hover{
+
+color: rgb(97, 96, 68);
+
+}
+
+.present{
+
+display: flex;
+flex-direction: row;
+text-align: center;
+padding: 50px;
+gap: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.present img{
+
+border-radius: 50%;
+box-shadow: 10px 10px 20px rgb(149, 140, 89);
+
+
+}
+
+@media(max-width:480px){
+.present img{   
+width: 50%;
+height: 50%}
+}
